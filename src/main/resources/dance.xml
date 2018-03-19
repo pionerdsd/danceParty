@@ -3,7 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id = "dance" class="by.learning.Dance">
+    <!--bean id = "dance" class="by.learning.Dance">
+        <constructor-arg ref="dancer"/>
+
+        <constructor-arg ref="danceFloor"/>
+    </bean-->
+    <bean id = "dancev2" class="by.learning.DanceV2">
         <constructor-arg ref="dancer"/>
 
         <constructor-arg ref="danceFloor"/>
