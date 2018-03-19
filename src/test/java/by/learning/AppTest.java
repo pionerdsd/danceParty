@@ -5,7 +5,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.contrib.java.lang.system.SystemOutRule;
 import org.junit.runner.RunWith;
+
 
 import static org.junit.Assert.assertNotNull;
 
@@ -17,8 +19,8 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = DanceConfig.class)
 public class AppTest {
-
-
+@Rule
+public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
 
     @Autowired
@@ -42,9 +44,6 @@ public class AppTest {
     }
 
 
-/*    public static void main(String[] args) {
-        /*Dancer dancer = new Dancer();
-        dance.xml dance.xml = new dance.xml(dancer, new DanceFloor(dancer));*/
 
 
 }
