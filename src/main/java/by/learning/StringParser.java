@@ -29,7 +29,7 @@ public class StringParser {
         while (true) {
             Scanner in = new Scanner(System.in);
             String val = in.nextLine();
-            if ((val.matches("^[0-9]{1,50}$")) && (list.size() < 50)) {
+            if ((val.matches("^[0-9]{1,10}$")) && (list.size() < 50)) {
 
                 list.add(Integer.valueOf(val));
             }
