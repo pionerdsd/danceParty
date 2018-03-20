@@ -1,5 +1,6 @@
 package by.learning;
 
+import by.learning.Interfaces.Shows;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -22,6 +23,7 @@ public class DanceV2 implements Shows {
         int n[] = dancer.getDanceCode();
         int size = danceFloor.getSize();
         int posision = 0, steps = 0;
+
         for (int i = 0; i < size; i++) {
             if (n[i] % 2 != 0) {
                 n[i] = (-1) * n[i];

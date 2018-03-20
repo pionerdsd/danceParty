@@ -27,7 +27,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     private DanceFloor danceFloor;
 
     @Autowired
-    private  Dance dance;
+    private  DanceV2 dance;
 
     @Test
     public void danceShouldHaveAnyDanceFloor(){
@@ -39,7 +39,7 @@ public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
     }
     @Test
     public void dannce(){
-        dance.Dance();
+        dance.dance();
 
     }
 
