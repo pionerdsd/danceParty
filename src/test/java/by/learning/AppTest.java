@@ -19,31 +19,33 @@ import static org.junit.Assert.assertNotNull;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = DanceConfig.class)
 public class AppTest {
-@Rule
-public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+    @Rule
+    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
+    @Autowired
+    private Dancer dancer;
 
     @Autowired
     private DanceFloor danceFloor;
 
     @Autowired
-    private  Dance dance;
+    private Dance dance;
 
     @Test
-    public void danceShouldHaveAnyDanceFloor(){
+    public void danceShouldHaveAnyDanceFloor() {
         assertNotNull(danceFloor);
     }
+
     @Test
-    public void danceShoulHaveAnyDancer(){
+    public void danceShoulHaveAnyDancer() {
         assertNotNull(dance);
     }
+
     @Test
-    public void dannce(){
-        dance.Dance();
+    public void dannce() {
+        dance.dance();
 
     }
-
-
 
 
 }
