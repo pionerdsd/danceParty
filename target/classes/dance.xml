@@ -19,7 +19,12 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
     </bean>
 
     <bean id="dancer" class="by.learning.Dancer">
+        <constructor-arg ref="stringparser"/>
+    </bean>
+
+    <bean id="stringparser" class="by.learning.StringParser">
 
     </bean>
+
 
 </beans>
